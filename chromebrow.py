@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 def get_src_url(urls: dict):
     chrome_opts = Options()
     chrome_opts.add_argument('--headless')
-    driver = webdriver.Chrome('./chromedriver-windows-32bit.exe_bkp', chrome_options=chrome_opts)
+    driver = webdriver.Chrome('./chromedriver-windows-32bit.exe', chrome_options=chrome_opts)
 
     src_urls = {}
     for name, url in urls.items():
